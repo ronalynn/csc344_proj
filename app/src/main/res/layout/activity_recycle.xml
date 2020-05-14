@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RecycleActivity">
+
+    <TextView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingVertical="10dp"
+
+        android:text="@string/app_title"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
+
+
+    <ImageView
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        app:srcCompat="@drawable/ic_leaf_white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="137dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/colorPrimary"
+        />
+
+    <ImageButton
+        android:id="@+id/home_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_home"
+        android:background="@color/colorPrimary"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <ImageButton
+        android:id="@+id/map_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorPrimary"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/ic_map_white"
+        android:layout_marginVertical="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_name"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/title_bar"/>
+
+    <TextView
+        android:id="@+id/item_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_brand"
+
+        android:layout_below="@+id/item_name"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/item_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_weight"
+        android:textSize="18sp"
+
+        android:layout_marginStart="3dp"
+        android:layout_below="@+id/item_name"
+        android:layout_toEndOf="@+id/item_brand"
+        />
+
+    <TextView
+        android:id="@+id/item_barcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_brand"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:text="sasdad"
+        android:textColor="#AFAFAF"
+        android:textSize="15sp" />
+
+
+    <ImageButton
+        android:id="@+id/lid_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_info"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentStart="true"
+       android:layout_below="@+id/item_barcode"
+        android:layout_marginTop="10dp"
+        android:paddingVertical="1.4dp"
+        android:paddingStart="70dp"
+        android:tooltipText="@string/lid_info"/>
+
+    <TextView
+        android:id="@+id/item_lid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_barcode"
+        android:layout_toEndOf="@+id/lid_info"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="@string/label_lid"
+        android:textAlignment="center"
+
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/item_lid_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_brand"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="31dp"
+        android:layout_toEndOf="@+id/item_lid"
+        android:paddingVertical="2dp"
+
+        android:text="@string/lid_result"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/item_lid"
+        android:layout_marginTop="4dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/lid_img_bottle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/lid_bottle" />
+            <ImageView
+                android:id="@+id/lid_img_cork"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/lid_cork"/>
+            <ImageView
+                android:id="@+id/lid_img_jar"
+                android:layout_width="210dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/lid_jar"/>
+            <ImageView
+                android:id="@+id/lid_img_plastic"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/lid_plastic"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageButton
+        android:id="@+id/container_info"
+        app:srcCompat="@drawable/ic_info"
+        android:background="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_lid"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentStart="true"
+        android:paddingVertical="1.4dp"
+        android:paddingStart="10dp"
+        android:tooltipText="@string/container_info"/>
+
+    <TextView
+        android:id="@+id/item_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_lid"
+        android:background="@color/colorPrimary"
+        android:layout_toEndOf="@+id/container_info"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+
+        android:text="@string/label_container"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:id="@+id/item_container_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_lid_result"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="145dp"
+        android:layout_toEndOf="@+id/item_container"
+        android:paddingVertical="2dp"
+
+        android:text="@string/container_result"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/label_info"
+        app:srcCompat="@drawable/ic_info"
+        android:background="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_container"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentStart="true"
+        android:paddingVertical="1.4dp"
+        android:paddingStart="50dp"
+        android:tooltipText="@string/label_info"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/item_container"
+        android:layout_marginTop="4dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/container_img_jar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/container_jar"/>
+            <ImageView
+                android:id="@+id/container_img_carton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/container_carton" />
+            <ImageView
+                android:id="@+id/container_img_crisp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/container_crisp"/>
+            <ImageView
+                android:id="@+id/container_img_tray"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/container_tray"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/item_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_toEndOf="@+id/label_info"
+        android:paddingStart="5dp"
+
+
+        android:layout_below="@+id/item_container"
+        android:layout_marginTop="150dp"
+
+        android:text="@string/label_label"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/item_label_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="2dp"
+
+        android:layout_alignBottom="@+id/item_container_result"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="-178dp"
+        android:layout_toEndOf="@+id/item_label"
+
+        android:text="@string/label_result"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/item_label"
+        android:layout_marginTop="4dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/label_img_bottle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/label_bottle"/>
+            <ImageView
+                android:id="@+id/label_img_jar"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/label_jar" />
+            <ImageView
+                android:id="@+id/label_img_takeout"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/label_takeout"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

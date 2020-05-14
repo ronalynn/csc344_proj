@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AddItemActivity">
+
+    <TextView
+        android:id="@+id/addItemTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shape_topbanner"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingVertical="10dp"
+        android:text="@string/add_product"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <ImageButton
+        android:id="@+id/home_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home"
+        android:layout_toStartOf="@+id/title_bar"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentStart="true"
+        />
+
+    <ImageButton
+        android:id="@+id/add_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_check"
+        android:background="@drawable/shape_topbanner"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <!-- - - - - - - - - - - - - - - - -Description - - - - -->
+    <TextView
+        android:id="@+id/txtItemDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addItemTxtView"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Description"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txtNameRequired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtItemDesc"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/required"
+        android:textSize="12sp"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/add_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addItemTxtView"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="ex. Baked beans"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+    <View
+        android:id="@+id/divide_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/add_name"
+        android:layout_marginTop="10dp"
+        android:background="@color/divide_grey"/>
+
+
+    <!-- - - - - - - - - - - - - - - - -Brand Name - - - - -->
+    <TextView
+        android:id="@+id/txtItemBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divide_1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/brand_name"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txtBrandRequired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtItemBrand"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/required"
+        android:textSize="12sp"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/add_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divide_1"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/ex_heinz"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+    <View
+        android:id="@+id/divide_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/add_brand"
+        android:layout_marginTop="10dp"
+        android:background="@color/divide_grey"/>
+
+
+    <!-- - - - - - - - - - - - - - - - - Weight - - - - -->
+    <TextView
+        android:id="@+id/txtItemWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divide_2"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/weight"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txtWeightRequired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtItemWeight"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/required"
+        android:textSize="12sp"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/add_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divide_2"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:hint="@string/ex_415g"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+    <View
+        android:id="@+id/divide_3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/add_weight"
+        android:layout_marginTop="10dp"
+        android:background="@color/divide_grey"/>
+
+    <!-- - - - - - - - - - - - - - - - - Barcode Image - - - - -->
+
+    <TextView
+        android:id="@+id/txtItemBarcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divide_3"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/barcode"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txtBarcodeRequired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtItemBarcode"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/required"
+        android:textSize="12sp"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/add_barcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divide_3"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:hint="enter manually"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/barcode_scan_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/scan_barcode"
+        android:textAllCaps="false"
+        android:background="@color/colorLight"
+        android:layout_below="@id/add_barcode"
+        android:layout_alignParentEnd="true"
+        android:paddingHorizontal="20dp"
+        android:layout_marginEnd="50dp"
+        />
+    <View
+        android:id="@+id/divide_4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/barcode_scan_btn"
+        android:layout_marginTop="10dp"
+        android:background="@color/divide_grey"/>
+
+    <!-- - - - - - - - - - - - - - - - - Item Image - - - - -->
+    <Button
+        android:id="@+id/camera_item_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/divide_4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:backgroundTint="@color/colorLight"
+        android:text="@string/upload_item_image"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/image_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/camera_item_btn"
+        android:layout_marginTop="0dp"
+        android:layout_marginHorizontal="20dp"
+
+        android:text="@string/add_image_desc"
+        android:textColor="@color/med_gray"
+        android:textSize="10sp"
+        />
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="276dp"
+        android:layout_height="235dp"
+        android:layout_below="@+id/image_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/fade_gray"
+        app:srcCompat="@drawable/ic_default_img" />
+
+    <TextView
+        android:id="@+id/add_img_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_img"
+        android:layout_marginTop="1dp"
+        android:text="img url "
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

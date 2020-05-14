@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Recycli1.1</string>
+    <string name="img_banner">banner</string>
+    <string name="img_camera_btn">Camera Button</string>
+    <string name="txt_search_hint">Search</string>
+    <string name="img_search_btn">Search Bar Button</string>
+    <string name="item_name">Coconut Oil</string>
+    <string name="item_brand_weight">Grape Tree, 500ml</string>
+    <string name="label_lid">Lid:</string>
+    <string name="lid_result">Metal</string>
+    <string name="label_container">Container:</string>
+    <string name="container_result">Glass</string>
+    <string name="label_label">Label:</string>
+    <string name="label_result">Non-Recyclable</string>
+    <string name="item_brand">Grape Tree, </string>
+    <string name="item_weight">500ml</string>
+    <string name="AddBtn">can\'t find what you\'re looking for?</string>
+    <string name="add_product">Add Product</string>
+    <string name="add_item_name">Item Name</string>
+    <string name="required">Required</string>
+    <string name="ex_brown_bread">ex. Brown bread</string>
+    <string name="description">Description</string>
+    <string name="brand_name">Brand Name</string>
+    <string name="ex_heinz">ex. Heinz</string>
+    <string name="ex_415g">ex. 415g</string>
+    <string name="weight">Weight</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="app_title">RECYCLi</string>
+    <string name="lid_info">Any removable or hinged covering, e.g. bottle caps, jar covers, tray coverings, etc.</string>
+    <string name="container_info">The main compartment that holds the food, e.g. bottle, jar, tray, bags, etc.</string>
+    <string name="label_info">Any removal sections not part of the container that displays the information of the product.</string>
+    <string name="upload_item_image">Upload Item Image</string>
+    <string name="add_image_desc">Take a picture of the item you want to add so we can verify it, try to include the name and weight of the item in the image if you can</string>
+    <string name="barcode">Barcode</string>
+    <string name="scan_barcode">scan barcode</string>
+</resources>
