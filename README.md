@@ -23,7 +23,7 @@ This project was created for my undergrad project for Computer Science BSc (Hons
 
 # Dissertation
 
-[Recycli: A Mobile Application to Promote the Recycling of Food Packaging](https://drive.google.com/file/d/188uhMAWlTw2YX9CBKQoRXRvAx0K2S1-k/view?usp=sharing)
+[Recycli: A Mobile Application to Promote the Recycling of Food Packaging](https://docs.google.com/document/d/1Z9MFLkwwG-V1_ksNSJ3XRYeBoLMg-GWZLaadcX3v6Uo/export?format=pdf)
 
 # Grade Outcome
 - Project: 72%
