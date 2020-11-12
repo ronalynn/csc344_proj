@@ -9,5 +9,14 @@ This project was created for my undergrad project for Computer Science BSc (Hons
 
 # Features
 - Users can search for products in the database using either the search bar or a barcode scanner.
+
+![search bar feature](images/searchbar.gif)
+![barcode feature](images/barcode.gif)
+
 - Locate nearest recycling centres
+
+![map](images/map.gif)
+
 - If the user cannot find a product they can add a product to the database to be approved for addition to the database.
+
+![](images/addproduct.gif)
