@@ -23,8 +23,7 @@ This project was created for my undergrad project for Computer Science BSc (Hons
 
 # Dissertation
 
-[Recycli: A Mobile Application to Promote the Recycling of Food Packaging]
-(https://github.com/ronalynn/csc344_proj/blob/master/877078.pdf)
+[Recycli: A Mobile Application to Promote the Recycling of Food Packaging](https://github.com/ronalynn/csc344_proj/blob/master/877078.pdf)
 
 # Grade Outcome
 - Project: 72%
